@@ -22,7 +22,7 @@ commands = [
     'mv ../{} ../{}'.format(repo_name, project_name),
 
     # Create .env file with a secret key
-    'echo "PG_DB_NAME=[DBNAME]\nPG_DB_USER=[DBUSER]\nPG_DB_PASSWORD=[DBUSERPASS]\nSECRET_KEY=\"{}\""'.format(secret_key),
+    'echo "PG_DB_NAME=[DBNAME]\nPG_DB_USER=[DBUSER]\nPG_DB_PASSWORD=[DBUSERPASS]\nSECRET_KEY=\"{}\"" > {}/.env'.format(secret_key, project_name),
 
     # Setup dev environment
     'virtualenv venv -p python3',
