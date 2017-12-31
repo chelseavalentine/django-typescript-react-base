@@ -40,6 +40,6 @@ commands = [
     'echo "PG_DB_NAME=[DBNAME]\nPG_DB_USER=[DBUSER]\nPG_DB_PASSWORD=[DBUSERPASS]\nSECRET_KEY=\"{}\"" > {}/.env'.format(secret_key, project_name),
 ]
 
-for command in command:
+for command in commands:
     process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
     output, error = process.communicate()
