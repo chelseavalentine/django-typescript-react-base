@@ -16,14 +16,26 @@ files = [
 ]
 
 for file in files:
-    with open(file, 'wt') as fout:
+    lines = []
+
+    with open(file) as fin:
         for line in fin:
-            fout.write(line.replace('exampleprojectname', project_name))
+            line = line.replace('exampleprojectname', project_name)
+
+        lines.append(line)
+
+    with open(file, 'w') as fout:
+        for line in lines:
+            fout.write(line)
+
 
 chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
 secret_key = get_random_string(50, chars)
 
 commands = [
+    # Rename project folder
+    'mv ../{} ../{}'.format(repo_name, project_name),
+
     # Create .env file with a secret key
     'echo "PG_DB_NAME=[DBNAME]\nPG_DB_USER=[DBUSER]\nPG_DB_PASSWORD=[DBUSERPASS]\nSECRET_KEY=\"{}\"" > {}/.env'.format(secret_key, project_name),
 ]

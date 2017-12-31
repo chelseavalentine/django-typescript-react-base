@@ -14,4 +14,4 @@ cd $project_name
 pwd
 rm -f setup.py
 echo 'All set up! Going to self-destruct now.'
-rm -- "$0"
+rm -f setup.sh
