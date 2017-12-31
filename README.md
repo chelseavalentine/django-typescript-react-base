@@ -22,6 +22,7 @@ Note that you'll have to take care of the following things manually:
 * `git clone https://github.com/chelseavalentine/django-typescript-react-base`
 * `cd django-typescript-react-base`
 * `./setup.sh [your project name here]`
+* `cd [your project name here]`
 
 ## Once you've set up your project...
 
