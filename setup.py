@@ -2,6 +2,7 @@ import subprocess
 import sys
 from django.utils.crypto import get_random_string
 
+repo_name = 'django-typescript-react-base'
 project_name = sys.argv[1]
 
 # Populate project name placeholders with the chosen project
@@ -18,7 +19,7 @@ secret_key = get_random_string(50, chars)
 commands = [
     # Rename directories
     'mv exampleprojectname {}'.format(project_name),
-    'mv ../exampleprojectname ../{}'.format(project_name),
+    'mv ../{} ../{}'.format(repo_name, project_name),
 
     # Create .env file with a secret key
     'echo "PG_DB_NAME=[DBNAME]\nPG_DB_USER=[DBUSER]\nPG_DB_PASSWORD=[DBUSERPASS]\nSECRET_KEY=\"{}\""'.format(secret_key),
@@ -31,6 +32,10 @@ commands = [
     'yarn',
     'rm -rf .git',
     'git init',
+    'cd ..',
+    'cd {}'.format(project_name),
+    'pwd',
+    'echo "All set up!"',
 ]
 
 for command in command:
