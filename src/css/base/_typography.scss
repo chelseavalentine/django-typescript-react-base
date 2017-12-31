@@ -1,0 +1,36 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+h1 {
+    color: $white;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+p {
+    color: $light-grey4;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0 0 12px 0;
+}
+
+a {
+    font-weight: 600;
+
+    &:link, &:visited {
+        color: $oc-green-3;
+        text-decoration: none;
+    }
+
+    &:hover, &:active {
+        text-decoration: underline;
+    }
+}

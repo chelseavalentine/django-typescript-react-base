@@ -1,0 +1,26 @@
+@import '../../css/imports';
+
+.signIn__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.signIn__header {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: fit-content
+}
+
+.signIn__headerTitle {
+    display: inline-block;
+    margin-left: 24px;
+    width: fit-content
+}
+
+.signIn__signUpMsg {
+    margin: 0;
+    text-align: center;
+}

@@ -1,0 +1,60 @@
+@import '../../css/imports';
+
+.userHome__emptyState {
+    border-radius: 3px;
+    background-color: $dark-grey2;
+    padding: 48px 0;
+}
+
+.userHome__emptyContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.userHome__language {
+    @include no-select;
+    border-radius: 3px;
+    background-color: $black;
+    padding: 16px;
+    display: block;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(black, .25);
+    min-height: 200px;
+    text-decoration: none !important;
+
+    &:hover {
+        // background-color: $oc-cyan-5;
+        box-shadow: 0 1px 3px rgba(black, .4);
+    }
+
+    &:active {
+        box-shadow: inset 1px 3px 10px black;
+    }
+}
+
+.userHome__languageName {
+    font-size: 24px;
+    font-weight: 600;
+    // margin: 0 0 48px 0;
+    text-shadow: 1px 1px 0 rgba($black, .2);
+}
+
+.userHome__largeLanguageName {
+    color: $dark-grey1;
+    font-size: 72px;
+    font-weight: 900;
+    text-align: right;
+    margin: 0;
+    line-height: 1;
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.userHome__languageInfo {
+    line-height: 1.5;
+    margin-top: 20px;
+    color: $light-grey2;
+}

@@ -1,0 +1,36 @@
+@import '../../css/imports';
+
+.input {
+    margin-bottom: 24px;
+}
+
+.input__label {
+    color: $dark-grey5;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.input__field {
+    font-size: 16px;
+    background-color: $white;
+    border: none;
+    border-radius: 3px;
+    color: $dark-grey3;
+    min-width: 320px;
+    padding: 12px 8px;
+
+    &::placeholder {
+        color: $grey4;
+    }
+
+    &:focus {
+        box-shadow: inset 1px 1px 3px rgba($black, .25);
+    }
+}
+
+.input__note {
+    color: $grey1;
+    font-size: 12px;
+    margin-top: 5px;
+}

@@ -1,0 +1,39 @@
+@import '../../../css/imports';
+
+.header {
+    display: block;
+    background-color: $dark-grey3;
+    box-shadow: 0 1px 3px rgba($black, .15);
+    z-index: 1;
+}
+
+.header__main {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    padding: 12px 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header__homeLink {
+    display: inline-flex;
+    align-items: center;
+
+    // TODO: Implement this better
+    text-decoration: none !important;
+}
+
+.header__siteTitle {
+    display: inline-block;
+    color: $white;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 0 0 18px;
+}
+
+// TODO: Implement this better
+.header__signIn {
+    color: $white !important;
+}
