@@ -44,3 +44,9 @@ To launch the project,
 To lint files: `npm run lint`
 
 Before deployment, remember to do: `./manage.py collectstatic`
+
+### Refreshers
+
+* On setting up a new Postgres database locally:
+  - `createdb [dbname]`
+  - `createuser [dbuser] --inherit root --login --pwprompt`
