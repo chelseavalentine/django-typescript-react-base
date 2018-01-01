@@ -2,6 +2,7 @@
 
 This base project includes my usual concoction for web apps:
 
+* Python 3
 * Django 2.0
 * Typescript + TSLint
 * React
@@ -26,12 +27,11 @@ Note that you'll have to have the aforementioned technologies (except for React,
 
 Anyone can setup their local dev environment by:
 
-1. Creating and activating the virtual environment:
+1. Creating and activating the virtual environment using Python 3:
     - `virtualenv venv -p python3`
     - `source venv/bin/activate`
 2. `pip install -r requirements.txt`
 3. `pip install -r requirements-local.txt`
-4. `yarn`
 
 To launch the project,
 

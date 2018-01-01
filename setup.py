@@ -46,11 +46,11 @@ for command in commands:
 # Create .env file with a secret key
 with open('{}/.env'.format(project_name), 'w') as fout:
     lines = [
-        'PG_DB_NAME="[DBNAME]"',
-        'PG_DB_USER="[DBUSER]"',
-        'PG_DB_PASSWORD="[DBUSERPASS]"',
-        'SECRET_KEY=\"{}\"'.format(secret_key),
+        'PG_DB_NAME="[DBNAME]"\n',
+        'PG_DB_USER="[DBUSER]"\n',
+        'PG_DB_PASSWORD="[DBUSERPASS]"\n',
+        'SECRET_KEY=\"{}\"\n'.format(secret_key),
     ]
 
     for line in lines:
-        fout.write(content)
+        fout.write(line)
