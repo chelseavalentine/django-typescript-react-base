@@ -1,4 +1,7 @@
 export const API_URL = {
+    LOG_IN: '/api/v1/log_in/',
+    SIGN_UP: '/api/v1/sign_up/',
+    CHECK_USERNAME: '/api/v1/users/check_username/',
 };
 
 export const KEY_CODE = {
