@@ -35,11 +35,10 @@ Anyone can setup their local dev environment by:
 
 To launch the project,
 
-1. `./manage.py runserver`
-2. Run the hot reloading development server
+1. Run the hot reloading development server
     - `node dev-server.js`
     - Visit [http://localhost:8000](http://localhost:8000).
-
+2. `./manage.py runserver`
 
 To lint files: `npm run lint`
 
