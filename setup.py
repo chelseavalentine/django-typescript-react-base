@@ -35,11 +35,22 @@ commands = [
     # Rename project folder
     'mv ../{} ../{}'.format(repo_name, project_name),
 
-    # Create .env file with a secret key
+    # Initialize .env file
     'touch {}/.env'.format(project_name),
-    'echo "PG_DB_NAME=[DBNAME]\nPG_DB_USER=[DBUSER]\nPG_DB_PASSWORD=[DBUSERPASS]\nSECRET_KEY=\"{}\"" > {}/.env'.format(secret_key, project_name),
 ]
 
 for command in commands:
     process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
     output, error = process.communicate()
+
+# Create .env file with a secret key
+with open('{}/.env'.format(project_name), 'w') as fout:
+    lines = [
+        'PG_DB_NAME="[DBNAME]"',
+        'PG_DB_USER="[DBUSER]"',
+        'PG_DB_PASSWORD="[DBUSERPASS]"',
+        'SECRET_KEY=\"{}\"'.format(secret_key),
+    ]
+
+    for line in lines:
+        fout.write(content)
