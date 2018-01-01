@@ -21,8 +21,7 @@ for file in files:
     with open(file) as fin:
         for line in fin:
             line = line.replace('exampleprojectname', project_name)
-
-        lines.append(line)
+            lines.append(line)
 
     with open(file, 'w') as fout:
         for line in lines:
