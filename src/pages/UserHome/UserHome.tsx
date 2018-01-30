@@ -3,6 +3,7 @@ import Base from '../../components/Base/Base';
 import './style.scss';
 
 interface UserHomeState {
+    example?: string;
 }
 
 export default class UserHome extends React.PureComponent<React.Props<React.Component<any>>, UserHomeState> {

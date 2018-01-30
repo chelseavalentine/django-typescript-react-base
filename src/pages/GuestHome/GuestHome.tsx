@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Base from '../../components/Base/Base';
-import './style.scss';
 import Input from '../../components/Input/Input';
 import UsersController from '../../controllers/users';
+import './style.scss';
 
 export default class GuestHome extends React.PureComponent<React.Props<React.Component<any>>, {}> {
     private username: Input;
@@ -24,12 +24,12 @@ export default class GuestHome extends React.PureComponent<React.Props<React.Com
             password: this.password.getValue(),
         };
 
-        const onSuccess = data => {
+        const onSuccess = (data) => {
             console.log(data);
             window.location.pathname = '/';
         };
 
-        const onError = res => {
+        const onError = (res) => {
             console.log(res);
         };
 

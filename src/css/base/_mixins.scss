@@ -2,8 +2,8 @@
     overflow-x: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
+}
 
-  @mixin no-select {
+@mixin no-select {
     user-select: none;
-  }
+}

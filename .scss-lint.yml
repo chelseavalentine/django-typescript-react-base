@@ -1,0 +1,7 @@
+scss_files: 'src'
+
+linters:
+  Indentation:
+    width: 4
+  SelectorFormat:
+    enabled: false

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "tslint -p . --fix",
+    "lint": "tslint -p . --fix; scss-lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

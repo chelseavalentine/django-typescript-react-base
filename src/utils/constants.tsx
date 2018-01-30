@@ -16,7 +16,7 @@ export const FORM_METHOD = {
 export const REQUEST_HEADER = {
     ACCEPT: 'Accept',
     CSRF: 'X-CSRFToken',
-}
+};
 
 export const CONTENT_TYPE = {
     DEFAULT: 'application/json',

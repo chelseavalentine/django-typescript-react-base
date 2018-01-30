@@ -47,7 +47,7 @@ export default class Input extends React.PureComponent<InputProps, {}> {
 
     public render() {
         const className = ClassNames({
-            input: true,
+            'input': true,
             [`${this.props.className}`]: this.props.className,
             'input-disabled': this.props.disabled,
         });

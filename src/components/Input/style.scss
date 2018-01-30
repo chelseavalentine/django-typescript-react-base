@@ -12,11 +12,11 @@
 }
 
 .input__field {
-    font-size: 16px;
     background-color: $white;
-    border: none;
+    border: 0;
     border-radius: 3px;
     color: $dark-grey3;
+    font-size: 16px;
     min-width: 320px;
     padding: 12px 8px;
 

@@ -19,18 +19,35 @@ p {
     color: $light-grey4;
     font-size: 16px;
     line-height: 1.2;
-    margin: 0 0 12px 0;
+    margin: 0 0 12px;
 }
 
 a {
     font-weight: 600;
 
-    &:link, &:visited {
+    &:link,
+    &:visited {
         color: $oc-green-3;
         text-decoration: none;
     }
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
         text-decoration: underline;
+    }
+}
+
+.a-adaptive {
+    font-weight: initial;
+
+    &:link,
+    &:visited {
+        color: initial;
+        text-decoration: initial;
+    }
+
+    &:hover,
+    &:active {
+        text-decoration: initial;
     }
 }

@@ -12,7 +12,7 @@ export default class Header extends React.PureComponent<HeaderProps, {}> {
                 <main className="header__main">
                     <NavLink
                         to="/"
-                        className="header__homeLink">
+                        className="header__homeLink a-adaptive">
                         Link to Home
                     </NavLink>
 
@@ -27,7 +27,7 @@ export default class Header extends React.PureComponent<HeaderProps, {}> {
             return (
                 <NavLink
                     to="/login"
-                    className="header__signIn">
+                    className="header__signIn a-adaptive">
                     Sign in
                 </NavLink>
             );
