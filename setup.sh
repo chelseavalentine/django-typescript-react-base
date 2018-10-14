@@ -5,7 +5,8 @@ mv exampleprojectname $project_name
 # Install Django just to run the python script
 virtualenv venv -p python3
 source venv/bin/activate
-pip install django==2.0
+pip install -r requirements.txt
+pip install -r requirements-local.txt
 
 yarn
 
