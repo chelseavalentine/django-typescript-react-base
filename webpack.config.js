@@ -5,6 +5,7 @@ const autoprefixer = require('autoprefixer');
 const BundleTracker = require('webpack-bundle-tracker');
 
 module.exports = {
+    mode: 'development',
     entry: [
         'webpack-dev-server/client?http://localhost:3000',
         'webpack/hot/only-dev-server',

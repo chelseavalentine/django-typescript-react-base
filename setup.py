@@ -13,6 +13,7 @@ files = [
     'manage.py',
     'package.json',
     'templates/index.html',
+    'scripts/example.py',
 ]
 
 for file in files:

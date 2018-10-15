@@ -10,9 +10,9 @@ This base project includes my usual concoction for web apps:
 * Virtualenv
 * Yarn
 * Node.js
-* Webpack
+* Webpack 4
 
-Note that you'll have to have the aforementioned technologies (except for React, of course) installed.
+Note that you'll have to have the aforementioned technologies (except for React) installed already.
 
 ## Installation
 

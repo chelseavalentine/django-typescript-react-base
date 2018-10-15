@@ -18,5 +18,5 @@ rm -f setup.py
 deactivate
 rm -rf venv
 
-echo 'All set up! Going to self-destruct now. Run `cd .. && cd $project_name` to update your command-line prompt.'
+echo "All set up! Going to self-destruct now. Run \`cd ../$project_name\` to update your command-line prompt's directory."
 rm -f setup.sh
