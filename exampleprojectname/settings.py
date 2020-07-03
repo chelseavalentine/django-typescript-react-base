@@ -123,7 +123,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'America/New_York'
+TIME_ZONE = 'America/Los_Angeles'
 
 USE_I18N = True
 
@@ -149,7 +149,7 @@ WEBPACK_LOADER = {
     'DEFAULT': {
         'CACHE': not DEBUG,
         'BUNDLE_DIR_NAME': 'bundles/', # must end with slash
-        'STATS_FILE': join(BASE_DIR, 'webpack-stats.json'),
+        'STATS_FILE': join(BASE_DIR, './dist/webpack-stats.json'),
         'POLL_INTERVAL': 0.1,
         'TIMEOUT': None,
         'IGNORE': ['.+\.hot-update.js', '.+\.map']
