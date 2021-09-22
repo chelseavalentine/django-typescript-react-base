@@ -1,4 +1,4 @@
-Django==3.0.8
+Django==3.1.13
 django-webpack-loader==0.7.0
 djangorestframework==3.11.0
 python-dotenv==0.14.0
